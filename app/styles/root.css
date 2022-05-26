@@ -1,0 +1,30 @@
+/* https://chromatone.vercel.app/ */
+
+:root {
+  --red-0: #000000;
+  --red-10: #3f0300;
+  --red-20: #660900;
+  --red-30: #8f1200;
+  --red-35: #a51600;
+  --red-40: #ba1e00;
+  --red-50: #de3818;
+  --red-60: #ff5533;
+  --red-70: #ff8a6f;
+  --red-80: #ffb4a2;
+  --red-90: #ffdad1;
+  --red-95: #ffede8;
+  --red-98: #fff8f6;
+  --red-99: #fcfcfc;
+  --red-100: #ffffff;
+}
+
+body {
+  background-color: var(--red-10);
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.large {
+  font-size: 300%;
+}
