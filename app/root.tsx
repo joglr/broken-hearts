@@ -12,7 +12,7 @@ import rootCSS from "~/styles/root.css";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Broken hearts",
+  title: "Broken Hearts",
   viewport: "width=device-width,initial-scale=1",
 });
 
