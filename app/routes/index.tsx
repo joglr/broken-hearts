@@ -71,7 +71,7 @@ export default function Index() {
         {months.map((monthName, i) => (
           <div key={i}>
             <div>{monthName}</div>
-            <div className="month-stat">{data.perMonth[i] ?? "-"}</div>
+            <div className="month-stat large-stat">{data.perMonth[i] || "-"}</div>
           </div>
         ))}
       </section>
