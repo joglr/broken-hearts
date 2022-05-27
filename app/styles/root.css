@@ -36,11 +36,6 @@ a:hover {
   color: var(--red-90);
 }
 
-.wrapper {
-  max-width: 500px;
-  margin: auto;
-}
-
 section {
   margin-top: 24px;
 }
@@ -68,10 +63,16 @@ section {
 }
 
 .broken-hearts {
+  padding: 24px;
+  margin: auto;
   display: flex;
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.broken-heart {
+  margin: 2px;
 }
 
 .months {

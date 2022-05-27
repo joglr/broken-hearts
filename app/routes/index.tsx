@@ -64,7 +64,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <section className="full-height">
+      <section className="">
         <div className="broken-hearts">{brokenHearts}</div>
       </section>
       <section className="full-height months">
