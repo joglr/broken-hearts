@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #000;
   color: var(--red-70);
   text-align: center;
@@ -40,7 +40,7 @@ section {
   margin: 24px;
 }
 .full-height {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   display: grid;
   place-items: center;
@@ -79,7 +79,8 @@ section {
 
 .months {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  /* Auto repeat */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .month-name {
