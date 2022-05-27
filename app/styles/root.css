@@ -83,7 +83,7 @@ section {
 .month-stat {
   color: var(--stat-color)
 }
-/*
-.sources {
 
-} */
+.sources {
+  text-align: left;
+}
