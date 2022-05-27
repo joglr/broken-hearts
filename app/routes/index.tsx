@@ -49,16 +49,16 @@ export default function Index() {
 
   return (
     <>
-      <section className="full-height stats">
+      <section className="full-height stats weight-700">
         <div className="stat">
-          In 2022 alone,
+          <span>In 2022 alone,</span>
           <p className="large-stat">{data.totalThisYear}</p>
-          children has been murdered in the United States in school shootings.
+          <span>children has been murdered in the United States in school shootings.</span>
         </div>
         <div className="stat">
-          It has been
+        <span>It has been</span>
           <p className="large-stat">{daysSinceLastIncident}</p>
-          <div title="data.lastShooting.description">
+          <div title={data.lastShooting.description}>
             day{daysSinceLastIncident === 1 ? "" : "s"} since the last school
             shooting
           </div>
@@ -70,7 +70,7 @@ export default function Index() {
       <section className="full-height months">
         {months.map((monthName, i) => (
           <div key={i}>
-            <div className="month-name">{monthName}</div>
+            <div className="weight-900">{monthName}</div>
             <div className="large-stat">{data.perMonth[i] || "-"}</div>
           </div>
         ))}
