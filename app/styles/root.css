@@ -49,6 +49,8 @@ section {
 .large-stat {
   font-size: 300%;
   color: var(--stat-color);
+  font-weight: 300;
+  letter-spacing: 0.075em;
   line-height: 100%;
   margin: 16px;
 }
@@ -80,8 +82,8 @@ section {
   grid-template-columns: repeat(6, 1fr);
 }
 
-.month-stat {
-  color: var(--stat-color)
+.month-name {
+  font-weight: 900;
 }
 
 .sources {
