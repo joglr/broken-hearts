@@ -44,13 +44,13 @@ export default function Index() {
         <br />
         <p className="large">{data.totalThisYear}</p>
         <br />
-        children has been murdered in the United States
+        children has been murdered in the United States in school shootings.
         <br />
         It has been
         <br />
         <p className="large">{daysSinceLastIncident}</p>
         <br />
-        day{daysSinceLastIncident === 1 ? "" : "s"} since the last shooting
+        day{daysSinceLastIncident === 1 ? "" : "s"} since the last school shooting
         <br />
         {data.lastShooting.description}
         <br />
