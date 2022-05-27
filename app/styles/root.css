@@ -16,15 +16,73 @@
   --red-98: #fff8f6;
   --red-99: #fcfcfc;
   --red-100: #ffffff;
+
+  --stat-color: var(--red-40);
 }
 
 body {
-  background-color: var(--red-10);
   font-family: 'Inter', sans-serif;
-  color: #fff;
+  background-color: #000;
+  color: var(--red-70);
   text-align: center;
 }
 
-.large {
-  font-size: 300%;
+a {
+  color: var(--red-80);
+  text-decoration: none;
 }
+
+a:hover {
+  color: var(--red-90);
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: auto;
+}
+
+section {
+  margin-top: 24px;
+}
+.full-height {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.large-stat {
+  font-size: 300%;
+  color: var(--stat-color);
+  line-height: 100%;
+  margin: 16px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.stat {
+  margin: 8px;
+}
+
+.broken-hearts {
+  display: flex;
+  font-size: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.months {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.month-stat {
+  color: var(--stat-color)
+}
+/*
+.sources {
+
+} */

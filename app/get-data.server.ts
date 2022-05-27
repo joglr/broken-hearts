@@ -43,11 +43,12 @@ export async function getData(): Promise<Data> {
 
   // Get per month
   totalTableRows.each((i, row) => {
+    if (i == 11) return;
     const cell = $(row).find("td:nth-child(4)");
     const textValue = cell.last().text();
 
     const perMonthValue = parseInt(textValue);
-    perMonth[i] = isNaN(perMonthValue) ? null : perMonthValue;
+    perMonth[i-1] = isNaN(perMonthValue) ? null : perMonthValue;
   });
 
   const totalThisYear = perMonth.reduce<number>((acc, curr) => acc + (curr ?? 0), 0);
