@@ -12,7 +12,7 @@ import rootCSS from "~/styles/root.css";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "715 Old Carrizo Road",
+  title: "Broken hearts",
   viewport: "width=device-width,initial-scale=1",
 });
 
