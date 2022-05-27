@@ -68,15 +68,12 @@ export default function Index() {
         <div className="broken-hearts">{brokenHearts}</div>
       </section>
       <section className="full-height months">
-        {data.perMonth.map((x, i) => {
-          // if (x == null) return null;
-          return (
-            <div key={i}>
-              <div>{months[i]}</div>
-              <div className="month-stat">{x ?? "-"}</div>
-            </div>
-          );
-        })}
+        {months.map((monthName, i) => (
+          <div key={i}>
+            <div>{monthName}</div>
+            <div className="month-stat">{data.perMonth[i] ?? "-"}</div>
+          </div>
+        ))}
       </section>
       <section className="sources">
         <h2>Sources</h2>
