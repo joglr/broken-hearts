@@ -50,7 +50,7 @@ export default function Index() {
             <span>In 2022 alone,</span>
             <p className="large-stat">{data.totalDeadThisYear}</p>
             <span>
-              civilians has been murdered in the United States in mass
+              people has been murdered in the United States in mass
               shootings.
             </span>
           </div>
@@ -59,7 +59,7 @@ export default function Index() {
             <span>In 2022 alone,</span>
             <p className="large-stat">{data.totalInjuredThisYear}</p>
             <span>
-              civilians has been injured in the United States in mass shootings.
+              people has been injured in the United States in mass shootings.
             </span>
           </div>
           <div className="stat">
