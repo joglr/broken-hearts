@@ -185,7 +185,7 @@ function IncidentBar({
           x={0}
           width={175}
           fill="var(--red-80)"
-          dominant-baseline="hanging"
+          dominantBaseline="hanging"
         >
           {incident.city}
         </text>
