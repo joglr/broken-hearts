@@ -1,7 +1,9 @@
 import { load } from "cheerio";
 
+const year = new Date().getFullYear()
+
 const wikiURL =
-  "https://en.m.wikipedia.org/wiki/List_of_mass_shootings_in_the_United_States_in_2022";
+  `https://en.m.wikipedia.org/wiki/List_of_mass_shootings_in_the_United_States_in_${year}`;
 
 export async function getData() {
   // : Promise<Data>
@@ -77,7 +79,7 @@ export async function getData() {
   const dateRaw = firstTableRow.find("td").first().text();
   // return date
 
-  const date = new Date(`${dateRaw} 2022`).getTime();
+  const date = new Date(`${dateRaw} ${year}`).getTime();
   const descriptionNode = firstTableRow.find("td").last();
 
   // remove sup tags

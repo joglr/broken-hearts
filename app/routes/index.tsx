@@ -42,12 +42,14 @@ export default function Index() {
     timeSinceLastIncident / (1000 * 60 * 60 * 24)
   );
 
+  const year = new Date().getFullYear()
+
   return (
     <>
       <section className="full-height grid weight-700">
         <div className="stats">
           <div className="stat">
-            <span>In 2022 alone,</span>
+            <span>In {year} alone,</span>
             <p className="large-stat">{data.totalDeadThisYear}</p>
             <span>
               people has been murdered in the United States in mass
@@ -56,7 +58,7 @@ export default function Index() {
           </div>
 
           <div className="stat">
-            <span>In 2022 alone,</span>
+            <span>In {year} alone,</span>
             <p className="large-stat">{data.totalInjuredThisYear}</p>
             <span>
               people has been injured in the United States in mass shootings.
@@ -89,7 +91,7 @@ export default function Index() {
         <ul>
           <li>
             <a
-              href="https://en.m.wikipedia.org/wiki/List_of_mass_shootings_in_the_United_States_in_2022"
+              href={`https://en.m.wikipedia.org/wiki/List_of_mass_shootings_in_the_United_States_in_${year}`}
               target="_blank"
               rel="noreferrer"
             >
